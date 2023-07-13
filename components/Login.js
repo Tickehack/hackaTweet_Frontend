@@ -1,4 +1,7 @@
-import { useDispatch, useSelector } from 'react-redux';
+
+import { useEffect, useState } from 'react';
+import {login, logout } from '../reducers/user';
+//import Moment from 'react-moment';
 //import { actions } from '../reducers/bookmarks';
 import styles from '../styles/Login.module.css';
 //import {  } from '@fortawesome/react-fontawesome';
@@ -6,16 +9,7 @@ import styles from '../styles/Login.module.css';
 
 
 function Login() {
-
-	const dispatch = useDispatch();
 	
-    const handleSignUp = () => {
-        //ouvrir le popo vert du composant Signup
-    }
-	
-    const handleSignIn = () => {
-        //ouvrir le popo vert du composant Signin
-    }
 
 	return (
 		<div className={styles.loginContainer}>
