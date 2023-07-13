@@ -52,10 +52,12 @@
     background-color: #3690ed;
     color:#FFF;
     border:0px;
+    cursor: pointer;
 }
 
 .signInButton{
     background-color: #151d27;
     color:#3690ed;
     border:1px solid #CCC;
+    cursor: pointer;
 }
