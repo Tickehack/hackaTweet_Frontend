@@ -1,16 +1,12 @@
-
 import { useDispatch, useSelector } from 'react-redux';
-import { useEffect, useState } from 'react';
-import {login, logout } from '../reducers/user';
-//import Moment from 'react-moment';
-//import { actions } from '../reducers/bookmarks';
+//import { actions } from '../reducers/login';
 import styles from '../styles/Login.module.css';
 //import {  } from '@fortawesome/react-fontawesome';
 //import {  } from '@fortawesome/free-solid-svg-icons';
 
 
 function Login() {
-	
+
 	const dispatch = useDispatch();
 	
     const handleSignUp = () => {

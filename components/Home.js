@@ -2,6 +2,7 @@ import styles from '../styles/Home.module.css';
 import { useDispatch, useSelector } from 'react-redux';
 import { useEffect, useState } from 'react';
 import {login, logout } from './Login';
+import Login from './Login';
 
 
 function Home() {
@@ -63,15 +64,31 @@ function Home() {
       
     };
 
-  return (
-    <div>
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-      </main>
-    </div>
-  );
+	const [homepage, setHomepage] = useState(true);
+
+	const changedepage = () => {
+	  setHomepage(!homepage)
+	}
+  
+  
+	if (homepage){
+	  return (
+		<div>
+		  <button onClick={()=> changedepage()} className={styles.buttonTemp}> Change de page</button>
+			  <Login />
+		</div>
+	  );
+	} else {
+	  return (
+		<div><button onClick={()=> changedepage()} className={styles.buttonTemp}> Change de page</button>
+		  <main className={styles.main}>
+			<h1 className={styles.title}>
+			  Messages
+			</h1>
+		  </main>
+		</div>
+	  );
+	}
 }
 
 

@@ -1,0 +1,41 @@
+.loginContainer{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    height:100vh;
+    width:100vw;
+}
+
+.grandLogo {
+    width: 18vw;
+    height: 14vw;
+    border: 0px solid #f80909;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    transform: rotate(180deg);
+    filter: brightness(0%) invert(100%);
+}
+
+.petitLogo {
+    width: 38px;
+    height: 30px;
+    transform: rotate(180deg);
+    filter: brightness(0%) invert(100%);
+    margin:0px;
+}
+
+.loginRight{
+    width: 100%;
+    height: 100%;
+    background-color: #111;
+    padding:20px;
+
+}
+
+.title, .title2, .already {
+    color: #FFF;
+}
+
+.title {
+    font-size: 60px;
+}
