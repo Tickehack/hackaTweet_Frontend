@@ -5,8 +5,7 @@ import {login, logout } from './Login';
 import Login from './Login';
 import SignUp from './SignUp';
 import SignIn from './SignIn';
-//import SignIn from './SignIn';
-//import Tweet from './Tweet';
+import Tweet from './Tweet';
 
 
 function EssaisComponents() {
@@ -16,7 +15,8 @@ function EssaisComponents() {
     const changeDeComposant = (newComponent) => {
         if (newComponent === 'SignUp') {setComposant(<SignUp />);}
         else if (newComponent === 'SignIn') {setComposant(<SignIn />);}
-        else if (newComponent === 'Tweet') {setComposant(<Tweet />);}
+        else if (newComponent === 'Tweet') {setComposant(<div className={styles.touslestweets}><Tweet /></div>);}
+        else if (newComponent === 'PlusieursTweets') {setComposant(<div><div className={styles.touslestweets}><Tweet /></div><div className={styles.touslestweets}><Tweet /></div><div className={styles.touslestweets}><Tweet /></div></div>);}
     }
 
     return (
@@ -26,6 +26,7 @@ function EssaisComponents() {
               <button onClick={()=> changeDeComposant('SignUp')} className={styles.buttonTemp}>Composant SignUp</button>
               <button onClick={()=> changeDeComposant('SignIn')} className={styles.buttonTemp}>Composant SignIn</button>
               <button onClick={()=> changeDeComposant('Tweet')} className={styles.buttonTemp}>Composant Tweet</button>
+              <button onClick={()=> changeDeComposant('PlusieursTweets')} className={styles.buttonTemp}>Plusieurs Tweets</button>
           </div>
           <div className={styles.composant}>
             {composant}

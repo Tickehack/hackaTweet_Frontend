@@ -5,8 +5,8 @@ import {login, logout } from '../reducers/user';
 //import Moment from 'react-moment';
 //import { actions } from '../reducers/bookmarks';
 import styles from '../styles/Tweet.module.css';
-//import {  } from '@fortawesome/react-fontawesome';
-//import {  } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTrashCan, faHeart } from '@fortawesome/free-solid-svg-icons';
 
 
 function Tweet() {
@@ -20,20 +20,26 @@ function Tweet() {
 	
     const handleLikeTweet = () => {
         //like ou unLike le tweet
+	}
+
+	const username ='';
+		//ça doit être pris dans le store, depuis la bdd, pour être utilisé dans toutes les pages
+
+	const message ='xxxA EXTRAIRE DE LA COLLECTION, EN TRAITANT LES #Hashtagsxxx';
+		//il faudra un regex pour traiter différemment la class des Hashtags, et le lien
+
 
 	return (
 		<div className={styles.tweetContainer}>
             <div className={styles.userLine}>
-                <img src='Avatar.png' className={styles.grandLogo} alt='Avatar de '{/* username */} />
+                <img src='default_avatar.png' className={styles.avatar} alt='Avatar de xxxUsernamexxx'  />
+				<p className={styles.firstname}>xxxFirstnamexxx</p>
+				<p className={styles.username}>@xxxUsernamexxx . </p>
+				<p className={styles.username}>xxxtempsécouléxxx</p>
             </div> 
-			
-			<div className={styles.loginRight}>
-                <img src='logoTweeter.png' className={styles.petitLogo} alt='Petit logo Tweeter' />
-				<h1 className={styles.title}>See what's<br />happening</h1>
-				<h2 className={styles.title2}>Join Hackatweet today.</h2>
-				<button onClick={() => handleSignUp()} className={styles.signUpButton} >Sign Up</button>
-				<p className={styles.already}>Already have an account ?</p>
-				<button onClick={() => handleSignIn()} className={styles.signInButton} >Sign In</button>
+			<div className={styles.message}>
+				{message}<br />
+				<FontAwesomeIcon key={1} icon={faHeart} className={styles.iconHeart} /> 4  <FontAwesomeIcon key={2} icon={faTrashCan} className={styles.iconTrashCan} />
 			</div>
 		</div>
 	);
