@@ -26,7 +26,7 @@ function Home() {
 	
     const handleSignUp = () => {
         //ouvrir le popo vert du composant Signup
-		fetch('http://localhost:3000/users/signup', {
+		fetch('https://hacka-tweet-backend.vercel.app/users/signup', {
 			method: 'POST',
 			headers: { 'Content-Type': 'application/json' },
 			body: JSON.stringify({firstname: signUpFirstname, username: signUpUsername, password: signUpPassword }),
@@ -45,7 +45,7 @@ function Home() {
 	
     const handleSignIn = () => {
         //ouvrir le popo vert du composant Signin
-		fetch('http://localhost:3000/users/signin', {
+		fetch('https://hacka-tweet-backend.vercel.app/users/signin', {
 			method: 'POST',
 			headers: { 'Content-Type': 'application/json' },
 			body: JSON.stringify({ username: signInUsername, password: signInPassword }),
