@@ -9,33 +9,32 @@ import styles from '../styles/Sign.module.css';
 //import {  } from '@fortawesome/free-solid-svg-icons';
 
 
-function SignUp() {
+function SignIn() {
 	
 	const dispatch = useDispatch();
 	
-    const handleCloseSignUp = () => {
+    const handleCloseSignIn = () => {
         //ferme le showmodal, même si l'enregistrement n'a pas été fait
     }
 	
-    const handleSignUp = () => {
-        //on vient de cliquer sur le bouton SignUp
+    const handleSignIn = () => {
+        //on vient de cliquer sur le bouton SignIn
     }
 
 	return (
 		<div className={styles.signContainer}>
             <div className={styles.closeShowmodal}>
-                <button onClick={()=> handleCloseSignUp () } className={styles.croix} >X{/* favicon de croix */}</button>
+                <button onClick={()=> handleCloseSignIn () } className={styles.croix} >X{/* favicon de croix */}</button>
             </div> 
             <div className={styles.divLogo}>
                 <img src='logoTweeter.png' className={styles.petitLogo} alt='Petit logo Tweeter' />
             </div>            
-			<h2 className={styles.create}>Create your HackaTweet account</h2>
-            <input type="text" className={styles.inputSign} placeholder="Firstname" id="signUpFirstname"/>
-            <input type="text" className={styles.inputSign} placeholder="Username" id="signUpUsername" />
-			<input type="password" className={styles.inputSign} placeholder="Password" id="signUpPassword" />
-			<button id="register" className={styles.buttonSign} onClick={() => handleRegister()}>Sign Up</button>
+			<h2 className={styles.create}>Connect to HackaTweet</h2>
+            <input type="text" className={styles.inputSign} placeholder="Username" id="SignInUsername" />
+			<input type="password" className={styles.inputSign} placeholder="Password" id="SignInPassword" />
+			<button id="register" className={styles.buttonSign} onClick={() => handleRegister()}>Sign In</button>
 		</div>
 	);
 }
 
-export default SignUp;
+export default SignIn;
