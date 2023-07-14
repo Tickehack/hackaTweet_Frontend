@@ -1,0 +1,68 @@
+.postContainer{
+    border:0px solid #888;
+    background-color: #151d27;
+    color:#fff;
+    padding: 16px;
+    font-size: 12px;
+    text-align: left;
+    line-height: 16px;
+}
+
+.inputMessage{
+    font-size: 16px;
+    border: 0px solid #888;
+    border-bottom-width:1px;
+    font-weight:bold;
+    background-color: #151d27;
+    margin: 6px;
+    padding: 6px;
+    padding-bottom: 20px;
+    color: #DDD;
+    width:100%
+
+}
+
+.inputMessage:placeholder{
+    font-weight:lighter;
+}
+
+.sousMessage{
+    display: flex;
+    flex-direction: row-reverse;
+    text-align: right;
+    align-items: center;
+}
+
+.sendTweet{
+    border-radius: 60px;
+    width: 130px;
+    height: 30px;
+    font-weight: bolder;
+    font-size: 14px;
+    background-color: #3690ed;
+    color:#FFF;
+    border:0px;
+    cursor: pointer;
+    margin:12px;
+}
+
+.userLine{
+    display: flex;
+    background-color: #151d27;
+    height: 60px;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.firstname{
+    font-weight: bolder;
+}
+
+.firstname, .username, .message{
+    padding: 3px;
+}
+
+.username {
+    color: #888
+}
