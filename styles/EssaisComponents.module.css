@@ -1,0 +1,49 @@
+.main, .mainLogin {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+  width:100vw;
+  height:100vh;
+  margin:0px;
+  padding:0px; 
+}
+
+.essaisComponentsContainer{
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;
+}
+
+.boutons{
+    display: flex;
+    flex-direction: column;
+    width:10vw;
+    height:100vh;
+}
+
+.composant{
+    width:90vw;
+    height:100vh;
+
+}
+
+.buttonTemp {
+  margin:10px;
+  padding:10px;
+}
+
+.title {
+  line-height: 1.15;
+  font-size: 100px;
+  font-family: Mont-Heavy;
+}
+
+.title a {
+  color: #0070f3;
+  text-decoration: none;
+}
+
+.title a:hover, .title a:focus, .title a:active {
+  text-decoration: underline;
+}
