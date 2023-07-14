@@ -1,0 +1,74 @@
+.signContainer{
+    display:flex;
+    flex-direction: column;
+    border: 0px;
+    color: #FFF;
+    background-color: #151d27;
+    border-radius: 12px;
+    width: 30%;
+    padding:20px;
+    vertical-align:text-top;
+    text-align:center;
+    align-items: center;
+}
+
+.closeShowmodal{
+    width: 100%;
+    height: 30px;
+    text-align: right;
+}
+
+.croix{
+    border: 0px;
+    color: #FFF;
+    background-color: #151d27;
+    cursor: pointer;
+}
+
+.create{
+    font-size: 16px;
+}
+
+.inputSign{
+    font-size: 12px;
+    border: 1px solid #888;
+    border-radius: 3px;
+    font-weight:bold;
+    background-color: #151d27;
+    padding: 6px;
+    margin: 5px;
+    width: 60%;
+    color: #DDD;
+
+}
+
+.inputSign:placeholder{
+    font-weight:lighter;
+}
+
+.buttonSign{
+    font-size: 12px;
+    border: 1px solid #888;
+    border-radius: 50px;
+    font-weight:bold;
+    background-color: #fff;
+    color: #151d27;
+    padding: 6px;
+    margin: 20px;
+    width: 45%;
+    cursor: pointer;
+}
+
+.petitLogo {
+    width: 38px;
+    height: 30px;
+    transform: rotate(180deg);
+    filter: brightness(0%) invert(100%);
+    margin:0px;
+}
+
+.divLogo{
+    text-align: center;
+    padding: 12px;
+}
+

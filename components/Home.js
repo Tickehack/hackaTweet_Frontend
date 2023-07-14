@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { useEffect, useState } from 'react';
 import {login, logout } from './Login';
 import Login from './Login';
+import EssaisComponents from './EssaisComponents';
 
 
 function Home() {
@@ -82,9 +83,7 @@ function Home() {
 	  return (
 		<div><button onClick={()=> changedepage()} className={styles.buttonTemp}> Change de page</button>
 		  <main className={styles.main}>
-			<h1 className={styles.title}>
-			  Messages
-			</h1>
+		  	<EssaisComponents />
 		  </main>
 		</div>
 	  );
